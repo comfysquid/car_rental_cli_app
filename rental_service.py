@@ -3,6 +3,7 @@ from car import Car
 
 
 class RentalService:
+    # sets list of cars for rent and empty dicts of currently rented cars & customers
     def __init__(self):
         self.available_cars = [
             Car("Toyota", "Corolla", 2022),
@@ -22,11 +23,12 @@ class RentalService:
     def add_customer(self, customer):
         self.customers.append(customer)
 
+    # check if car exists & is available for rent
     def rent_car(self, customer_name, customer_age, car_make, car_model, car_year):
         car = self.find_car(car_make, car_model, car_year)
         if car is None or not car.is_available:
             return False
-
+    # check if customer exists and isn't renting other cars, and then add cust if false
         customer = self.find_customer(customer_name)
         if customer is None:
             customer = Customer(customer_name, customer_age)

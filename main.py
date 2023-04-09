@@ -25,6 +25,7 @@ def main():
             model = input("Enter car model: ")
             year = int(input("Enter car year: "))
             car = Car(make, model, year)
+            # TODO Input validation for adding vehicles
             rental_service.add_car(car)
             print(f"{car} added to the available cars.")
 
