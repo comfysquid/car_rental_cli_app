@@ -6,14 +6,34 @@ class RentalService:
     # sets list of cars for rent and empty dicts of currently rented cars & customers
     def __init__(self):
         self.available_cars = [
-            Car("Toyota", "Corolla", 2022),
-            Car("Honda", "Civic", 2021),
-            Car("Hyundai", "Elantra", 2023),
+            Car("Ford", "Focus", 2022),
+            Car("Ford", "Mustang", 2021),
+            Car("Ford", "Ranger", 2023),
+            Car("Honda", "Civic", 2022),
+            Car("Honda", "CR-V", 2021),
+            Car("Honda", "HR-V", 2023),
+            Car("Hyundai", "Elantra", 2022),
+            Car("Hyundai", "Kona", 2021),
+            Car("Hyundai", "Tucson", 2023),
             Car("Kia", "Cerato", 2022),
+            Car("Kia", "Sorento", 2021),
+            Car("Kia", "Sportage", 2023),
             Car("Mazda", "3", 2022),
+            Car("Mazda", "CX-5", 2021),
             Car("Mazda", "MX-5", 2000),
-            Car("Mazda", "MX-5", 2023)
+            Car("Mazda", "MX-5", 2023),
+            Car("Subaru", "Forester", 2022),
+            Car("Subaru", "Outback", 2021),
+            Car("Subaru", "XV", 2023),
+            Car("Toyota", "Corolla", 2022),
+            Car("Toyota", "HiLux", 2021),
+            Car("Toyota", "Rav4", 2023),
+            Car("Volkswagen", "Golf", 2022),
+            Car("Volkswagen", "Polo", 2021),
+            Car("Volkswagen", "Tiguan", 2023)
         ]
+        self.rented_cars = []
+        self.customers = []
         self.rented_cars = []
         self.customers = []
 
