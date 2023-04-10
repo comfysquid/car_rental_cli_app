@@ -1,3 +1,6 @@
+from enum import Enum
+
+
 class Car:
     # Init car vars
     def __init__(self, make, model, year, is_available=True):
@@ -21,3 +24,14 @@ class Car:
     def return_car(self):
         self.is_available = True
         return True
+
+
+class Make(Enum):
+    Toyota = ["HiLux", "Corolla", "Rav4"]
+    Ford = ["Ranger", "Mustang", "Focus"]
+    Mazda = ["CX-5", "Mazda3", "MX-5"]
+    Hyundai = ["i30", "Tucson", "Kona"]
+    Kia = ["Cerato", "Sorento", "Sportage"]
+    Volkswagen = ["Golf", "Tiguan", "Polo"]
+    Subaru = ["Forester", "XV", "Outback"]
+    Honda = ["Civic", "CR-V", "HR-V"]
